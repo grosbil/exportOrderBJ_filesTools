@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 15 for Windows Desktop
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exportOrderBJ_filesTools", "exportOrderBJ_filesTools\exportOrderBJ_filesTools.csproj", "{67E02A16-5503-4F27-946A-32DAEB338B1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67E02A16-5503-4F27-946A-32DAEB338B1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67E02A16-5503-4F27-946A-32DAEB338B1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67E02A16-5503-4F27-946A-32DAEB338B1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67E02A16-5503-4F27-946A-32DAEB338B1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A0A12CD-C316-4746-855D-305B58260F7F}
+	EndGlobalSection
+EndGlobal
