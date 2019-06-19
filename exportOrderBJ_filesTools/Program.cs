@@ -14,8 +14,7 @@ namespace exportOrderBJ_filesTools
             {
   
             string Path = args[0];
-            // Path = "";
-            //Path = "C:\\OpenFlux\\ECHANGES\\BJ\\WebCSI\\BL\\temp\\";
+    
             string PathFileIn = Path + "BL.txt";
             String Delim_DebutFile = "#BEGIN#";
             String delim_Filename = "#FILENAME#";
@@ -27,7 +26,7 @@ namespace exportOrderBJ_filesTools
               
 
             string[] fichier = File.ReadAllLines(PathFileIn, Encoding.UTF8);      
-            //List<string> newlines = new List<string>();
+            
             File.WriteAllLines(PathFileIn, fichier, Encoding.UTF8);
 
             string content = fichier[0];
@@ -62,12 +61,11 @@ namespace exportOrderBJ_filesTools
                         contents += EANQte+ "\n";
                         content = content.Substring(indexEAN + 5); 
                     }
-                    //newlines.Add(contents);
+                    
                     string PathFileOut = Path + fileName + ".txt";
-                   // File.WriteAllLines(PathFileOut, contents);
+                   
                     File.WriteAllText(PathFileOut, contents.Replace("\r\n", ""));
-                    // vidage de la ligne pour passer à la suivante
-                    //newlines.Clear();
+                   
                     contents = "";
 
                 }
@@ -78,11 +76,11 @@ namespace exportOrderBJ_filesTools
             }
             catch (Exception ex)
             {
-                //Console.WriteLine("Problème: {0}", ex.Message);
+                
                 String pathLog = "C:\\Openflux\\tools\\logtoolsSplit_Bj_Files.txt";
                 string[] contents = { "Problème le : "+ DateTime.UtcNow +" : "+ ex.Message };
                 File.AppendAllLines(pathLog, contents);
-                //Console.ReadKey();
+                
             }
 
      }
