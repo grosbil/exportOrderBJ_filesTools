@@ -12,7 +12,7 @@ namespace exportOrderBJ_filesTools
 
             try
             {
-  
+  //commentaire
             string Path = args[0];
     
             string PathFileIn = Path + "BL.txt";
